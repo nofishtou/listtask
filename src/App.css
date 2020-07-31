@@ -1,38 +1,68 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  padding-top: 1rem;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.month-list-item {
+  width: 500px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container ul {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.month-list-item  h4 {
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  transition: 0.2s ease-in-out all;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.month-list-item ol {
+  padding-top: 0.25rem;
+}
+
+.month-item-grey {
+  border-bottom: 2px solid grey;
+}
+
+.month-item-blue {
+  border-bottom: 2px solid blue;
+}
+
+.month-item-green {
+  border-bottom: 2px solid green;
+}
+
+.month-item-red {
+  border-bottom: 2px solid red;
+}
+
+.user-list-item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 0.25rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+.display-none {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (hover:hover) {
+  .month-list-item  h4:hover {
+    color: blue;
+    cursor: pointer;
   }
 }
